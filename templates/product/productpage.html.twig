@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+ {% for produit in produits %}
+        <div class="col-6">
+    {{ produit.produit.title }}
+    <hr>
+    {{ produit.produit.price }}
+    <hr>
+    <img src="{{ produit.produit.image }}">
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
